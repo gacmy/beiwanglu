@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/login_bg"
+    >
+
+   <include layout="@layout/menu_content"></include>
+
+    <TextView
+        android:id="@+id/id_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="2016年12月21号 11:34"
+        />
+    <com.gac.beiwanglu.view.CustomEditText
+        android:id="@+id/note"
+
+        android:background="@color/gray"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:gravity="top"
+        android:textSize="22sp"
+        android:capitalize="sentences"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        >
+
+    </com.gac.beiwanglu.view.CustomEditText>
+
+</LinearLayout>

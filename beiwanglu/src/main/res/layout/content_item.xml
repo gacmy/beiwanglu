@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+         android:background="@color/zhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/include"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:background="@drawable/img_selector"
+            android:layout_margin="2dp"
+            android:id="@+id/id_iv_open"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:src="@drawable/ic_open"
+            />
+        <ImageView
+            android:background="@drawable/img_selector"
+            android:layout_margin="2dp"
+            android:id="@+id/id_iv_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:src="@drawable/ic_edit"
+            />
+        <ImageView
+            android:layout_margin="2dp"
+            android:background="@drawable/img_selector"
+            android:id="@+id/id_iv_lock"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_lock"
+
+            />
+        <ImageView
+            android:layout_margin="2dp"
+            android:background="@drawable/img_selector"
+            android:id="@+id/id_iv_color"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:src="@drawable/ic_color"
+            />
+        <ImageView
+            android:layout_margin="2dp"
+            android:background="@drawable/img_selector"
+            android:id="@+id/id_iv_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:src="@drawable/ic_delete"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015.10.12 11:12:32"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/id_tv_date_unlock"
+        android:layout_above="@+id/id_et_unlock"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="gac"
+        android:enabled="false"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/id_et_unlock" />
+</RelativeLayout>
